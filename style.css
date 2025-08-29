@@ -1,29 +1,127 @@
+/* General Body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-}
-
-/* Hero */
-.hero {
-  min-height: 60vh;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://source.unsplash.com/1600x600/?technology,code') center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Section headings */
-h2 {
-  font-weight: bold;
+  background-color: #f9f9f9;
   color: #333;
 }
-
-/* Card hover */
-.card {
-  transition: transform 0.3s, box-shadow 0.3s;
+body {
+  background: linear-gradient(to right, #c471ed, #f64f59);
+  color: #fff;
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+
+
+/* Navbar */
+.navbar {
+  padding: 1rem 0;
+}
+.navbar-brand {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.nav-link {
+  font-weight: 500;
+  margin-left: 0.5rem;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x600/?technology,code') no-repeat center center/cover;
+  height: 60vh;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* Section Titles */
+section h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+.card-body {
+  padding: 1.8rem;
+}
+.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #0d6efd;
+}
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  transition: background 0.3s, transform 0.3s;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #fff;
+  font-size: 0.95rem;
+}
+footer p {
+  margin: 0;
+}
+
+/* Code styling */
+code {
+  background-color: #f1f1f1;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  color: #d63384;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .card-body {
+    padding: 1.2rem;
+  }
 }
